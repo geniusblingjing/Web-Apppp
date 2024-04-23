@@ -1,0 +1,126 @@
+body {
+    font-size: 20px; 
+    color: #010f22; 
+    font-family: Arial, sans-serif;
+    margin: 0; /* Removed the margin to allow full use of the page and center content more effectively */
+    padding: 40px; /* Adds padding instead of margin for a better frame */
+    display: flex; /* Changes display to flex */
+    flex-direction: column; /* Stacks children elements vertically */
+    align-items: center; /* Centers children horizontally */
+    /* justify-content: center;  */
+    height: 100vh; /* Makes the body take at least the full height of the viewport */
+    background: #000000; /* Adds a light grey background for a modern look */
+}
+
+h1 {
+    font-size: 100px;
+    color: #2e3b78; /* A darker grey for better readability */
+    margin-bottom:60px; /* Adds space below the header */
+}
+
+h2 {
+    font-family: 'Arial', sans-serif; /* Using Arial for wide compatibility */
+    font-size: 24px; /* Suitable size for subheadings */
+    color: #000000; /* Dark gray color for readability */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center-aligns the text */
+    margin-top: 20px; /* Spacing at the top */
+    margin-bottom: 20px; /* Spacing at the bottom */
+    padding: 10px; /* Padding around the text */
+    border-radius: 8px; /* Rounded corners for a soft look */
+}
+
+textarea, input {
+    width: 100%; /* Responsive width */
+    height: 200px;
+    padding: 10px; /* Padding for better text visibility */
+    margin: 20px auto; /* Vertical spacing */
+    border: 2px solid #ccc; /* Subtle border styling */
+    border-radius: 4px; /* Rounded corners for the input fields */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+.button-container {
+    text-align: center;
+}
+button {
+    padding: 15px 30px; 
+    font-size: 20px; 
+    background-color: #4c7aaf; /* A vibrant green color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button {
+    display: inline-block; /* Places buttons inline */
+}
+button:hover {
+    background-color: #223783; /* A darker green on hover */
+}
+
+img {
+    max-width: 100%; /* Makes images responsive */
+    height: auto; /* Maintains aspect ratio */
+    margin: 20px 0; /* Adds vertical spacing */
+}
+
+p {
+    color: #000000; 
+    max-width: 80%; 
+    margin: 20px auto; 
+}
+
+a {
+    font-size: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #1e69a7; /* Color matches the button for consistency */
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s; /* Smooth transitions for both color and background */
+}
+
+a:hover {
+    color: #ffffff; /* White text on hover */
+    background-color: #05065c; /* Dark blue background on hover */
+}
+
+#canvas {
+    cursor: crosshair; /* Specific style for canvas interactions */
+}
+
+#loadingIndicator {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #ffffff;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+
+.result-box {
+    display: flex;
+    /* justify-content: center; Center horizontally */
+    align-items: center;
+    width: 75%;  
+    height: auto; 
+    padding:10px;  /* Reduced padding */
+    margin: 20px auto;  /* Adequate margin */
+    border: 4px solid #ffffff;
+    margin-top: 20px;
+    background-color: #84b1de;
+}
+
+.result-box h2, .result-box p, .result-box div {
+    margin-bottom: 10px;
+}
+
+.analysis div {
+    padding-left: 20px;
+    border-left: 2px solid #3300ff; /* Blue left border for emphasis */
+}

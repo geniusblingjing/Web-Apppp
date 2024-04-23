@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Catcher</title>
+
+    <!-- <style>
+        .result-box {
+            border: 1px solid #5c89b1;
+            padding: 15px;
+            margin-top: 10px;
+            background-color: #5e7d98;
+        }
+        
+        .result-box h2, .result-box p, .result-box div {
+            margin-bottom: 10px;
+        }
+        
+        .analysis div {
+            padding-left: 20px;
+            border-left: 2px solid #007BFF;
+        }
+        </style> -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
+
+    <link rel="stylesheet" href="style.css"> <!-- Correct relative path -->
+</head>
+<body>
+    <h1>Dream Catcher</h1>
+    <div class="controls">
+        <textarea id="dream-input" placeholder="Describe your dream here..."></textarea>
+        <button id="analyze-button">Analyze Dream</button>
+        <button id="generate-image-button">Generate Image</button>
+    </div>
+    <div id="loadingIndicator" style="display: none;">
+        <p>Loading...</p>
+        <!-- Feel free to replace the paragraph with an animated spinner or other graphic -->
+    </div>
+    <div id="output-box" style="display: none;"> <!-- Initially hidden -->
+        <p>Results will appear here...</p>
+    </div>
+    
+    <div id="results-container"></div>
+    <script src="app.js"></script> <!-- Load app.js before inline script -->
+  
+</body>
+</html>
