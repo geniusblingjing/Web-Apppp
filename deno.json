@@ -2,5 +2,13 @@
   "tasks": {
     "start": "deno run --allow-env --allow-net --allow-read=../.. app.js",
     "dev": "deno run --allow-env --allow-net --allow-read=../.. --watch --no-clear-screen app.js"
+  },
+  "deploy": {
+    "project": "03d56db8-692b-447e-bad5-dfd5a4c28fdf",
+    "exclude": [
+      "**/node_modules"
+    ],
+    "include": [],
+    "entrypoint": "src\\app.js"
   }
 }

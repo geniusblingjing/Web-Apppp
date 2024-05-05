@@ -22,6 +22,6 @@ app.use(router.routes());
 app.use(router.allowedMethods());
 app.use(staticServer);
 
-console.log("Listening on http://localhost:8000");
+console.log("Listening on http://localhost:8888");
 
 await app.listen({ port: 8000, signal: createExitSignal() });
